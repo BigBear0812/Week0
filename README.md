@@ -10,4 +10,16 @@ Like it said in the intro email, don't worry about recreating the exact look, ju
 Shoot me an email when you complete it and I will get back to you as soon as possible!
  
 (Not all will be this simple, we just need a solid starting point.)
+
+About:
+
+This is a NodeJS express server the wil simply serve up the pages.
  
+To run:
+
+Have NodeJS installed on the system.
+Clone down the respoitory.
+Run command prompt and navigate to where it is cloned down.
+Run "npm install".
+Run "node app".
+Navigate browser to http://localhost:3000.
