@@ -1,8 +1,8 @@
 extends layout
 
 block hero
-	h1 Font Family
-	p "Helvetica Neue",Helvetica,Arial,sans-serif;
+	h1= title
+	p This is the original challenge
 block content
 	div.row
 		div.span12
@@ -39,35 +39,35 @@ block content
 				div.control-group
 					label.control-label First Name: 
 					div.controls
-						input(type='text')
+						input(type='text', name='FirstName')
 				div.control-group
 					label.control-label Last Name: 
 					div.controls
-						input(type='text')
+						input(type='text', name='LastName')
 				div.control-group
 					label.control-label Date of Birth: 
 					div.controls
-						input(type='text')
+						input(type='text', name='DOB')
 				div.control-group
 					label.control-label Gender: 
 					div.controls
 						label.radio.inline
-							input(type='radio') 
+							input(type='radio', name='gender', value='Male') 
 							text Male
 						label.radio.inline
-							input(type='radio') 
+							input(type='radio', name='gender', value='Female') 
 							text Female
 				div.control-group
 					label.control-label Fav Color: 
 					div.controls
-						select
-							option - Pick One -
-							option Red
-							option Orange
-							option Yellow
-							option Green
-							option Blue
-							option Purple
+						select(name='FavColor')
+							option(value='Placeholder') - Pick One -
+							option(value='Red') Red
+							option(value='Orange') Orange
+							option(value='Yellow') Yellow
+							option(value='Green') Green
+							option(value='Blue') Blue
+							option(value='Purple') Purple
 				div.control-group
 					div.controls
 						button(type='submit', class='btn') Submit

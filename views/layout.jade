@@ -5,8 +5,8 @@ html
 		link(rel='stylesheet', href='/css/style.css')
 		link(rel='stylesheet', href='/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
-		script(src='/js/bootstrap.min.js')
 		script(src='/js/jQuery.js')
+		script(src='/js/bootstrap.min.js')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body
 		div.container
@@ -14,17 +14,19 @@ html
 				block hero
 			div.navbar
 				div.navbar-inner
-					a(class='brand', href='#') Home
+					a(class='brand', href='/') Home
 					ul.nav
 						li 
-							a(href='#') Page 1
+							a(href='/page1') Page 1
 						li 
-							a(href='#') Page 2
+							a(href='/page2') Page 2
 						li 
-							a(href='#') Page 3
+							a(href='/page3') Page 3
 						li 
-							a(href='#') Page 4
+							a(href='/page4') Page 4
 						li 
-							a(href='#') Page 5
+							a(href='/page5') Page 5
 			div.content
 				block content
+			script
+				block scripts

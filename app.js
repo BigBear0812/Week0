@@ -29,8 +29,15 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+//routes list
 app.get('/', routes.index);
-app.get('/users', user.list);
+//app.get('/users', user.list);
+app.get('/page1', routes.page1);
+app.get('/page2', routes.page2);
+app.get('/page3', routes.page3);
+app.get('/page4', routes.page4);
+app.get('/page5', routes.page5);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
