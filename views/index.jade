@@ -1,5 +1,81 @@
 extends layout
 
+block hero
+	h1 Font Family
+	p "Helvetica Neue",Helvetica,Arial,sans-serif;
 block content
-  h1= title
-  p Welcome to #{title}
+	div.row
+		div.span12
+			h2 Sub Header 1
+			p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper volutpat urna ac accumsan. Phasellus ac nisl erat. Quisque congue sed massa nec feugiat. Sed semper a elit vel pulvinar. Sed eu lorem dapibus, vestibulum tellus eget, pharetra tellus. Cras sed turpis a metus bibendum tristique. Sed eget arcu eget neque lacinia auctor a rutrum velit. Aliquam sed ultricies est. Praesent condimentum metus eget diam laoreet, at vulputate tellus posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ac condimentum ligula.
+			p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper volutpat urna ac accumsan. Phasellus ac nisl erat. Quisque congue sed massa nec feugiat. Sed semper a elit vel pulvinar. Sed eu lorem dapibus, vestibulum tellus eget, pharetra tellus. Cras sed turpis a metus bibendum tristique. Sed eget arcu eget neque lacinia auctor a rutrum velit. Aliquam sed ultricies est. Praesent condimentum metus eget diam laoreet, at vulputate tellus posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ac condimentum ligula.
+	div.row
+		div.span6
+			h2 Sub Header 2
+			ul
+				li Fruits
+					ul
+						li Apple
+							ul
+								li Granny Smith
+								li Gala
+						li Banana
+						li Tomato
+				li Vegetables
+					ul
+						li Broccoli
+						li Potatoes
+							ul
+								li Russet Potatoes
+								li Baby Reds
+				li Meats
+					ul
+						li Chicken
+						li Beef
+						li SPAM
+		div.span6
+			h2 Sub Header 3
+			form.well.form-horizontal
+				div.control-group
+					label.control-label First Name: 
+					div.controls
+						input(type='text')
+				div.control-group
+					label.control-label Last Name: 
+					div.controls
+						input(type='text')
+				div.control-group
+					label.control-label Date of Birth: 
+					div.controls
+						input(type='text')
+				div.control-group
+					label.control-label Gender: 
+					div.controls
+						label.radio.inline
+							input(type='radio') 
+							text Male
+						label.radio.inline
+							input(type='radio') 
+							text Female
+				div.control-group
+					label.control-label Fav Color: 
+					div.controls
+						select
+							option - Pick One -
+							option Red
+							option Orange
+							option Yellow
+							option Green
+							option Blue
+							option Purple
+				div.control-group
+					div.controls
+						button(type='submit', class='btn') Submit
+							
+						
+						
+						
+						
+						
+						
+						

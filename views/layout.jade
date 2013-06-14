@@ -1,7 +1,30 @@
 doctype 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='/css/style.css')
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+		script(src='/js/bootstrap.min.js')
+		script(src='/js/jQuery.js')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	body
+		div.container
+			div.hero-unit
+				block hero
+			div.navbar
+				div.navbar-inner
+					a(class='brand', href='#') Home
+					ul.nav
+						li 
+							a(href='#') Page 1
+						li 
+							a(href='#') Page 2
+						li 
+							a(href='#') Page 3
+						li 
+							a(href='#') Page 4
+						li 
+							a(href='#') Page 5
+			div.content
+				block content
